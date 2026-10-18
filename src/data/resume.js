@@ -7,7 +7,7 @@ export const profile = {
   phone: "+91-8936018873",
   linkedin: "https://linkedin.com/in/abhishek-kumar-6b27691b4",
   // Put your GitHub username here to switch on the GitHub statistics section.
-  github: "",
+  github: "abhi1336",
   resumeFile: "/Abhishek_Kumar_Resume.pdf",
   openToWork: true,
 };

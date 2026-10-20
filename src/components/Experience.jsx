@@ -15,7 +15,7 @@ function Role({ job, defaultOpen }) {
           <h3 className="text-xl font-semibold">{job.role}</h3>
           <span className="font-mono text-sm text-muted">{job.period}</span>
         </div>
-        <p className="mt-1 text-blue">{profile.company}, Noida</p>
+        <p className="mt-1 text-blue">{profile.company} · {profile.location}</p>
         <ul className="mt-5 space-y-3 text-muted">
           {shown.map((p) => (
             <li key={p} className="flex gap-3 leading-relaxed">
@@ -43,7 +43,7 @@ function Role({ job, defaultOpen }) {
 
 export default function Experience() {
   return (
-    <Section id="experience" title="Experience" sub="Three roles at one company, each with a bigger scope than the last.">
+    <Section id="experience" title="Professional experience" sub="Career progression at Addverb Technologies, from frontend foundations to full stack delivery and team leadership.">
       <div className="relative ml-1.5 space-y-8 border-l border-edge">
         {experience.map((job, i) => <Role key={job.role} job={job} defaultOpen={i === 0} />)}
       </div>

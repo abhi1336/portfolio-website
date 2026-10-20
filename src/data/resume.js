@@ -12,7 +12,7 @@ export const profile = {
   openToWork: true,
 };
 
-export const roles = ["Full Stack Engineer", "Frontend Architect", "Team Lead", "System Designer"];
+export const targetRoles = ["Frontend Developer", "Full Stack Developer", "Lead Software Engineer"];
 
 export const stats = [
   { to: 4.5, decimals: 1, suffix: "+", label: "Years building enterprise software" },
@@ -23,14 +23,14 @@ export const stats = [
 
 export const about = {
   story: [
-    "I joined Addverb Technologies as an intern in 2022, turning wireframes into components. Today I lead a 6-person team and own warehouse software from the handheld screen to the message queue behind it.",
-    "I work across the stack: Angular and Web Components on the front, Spring Boot, RabbitMQ and SQL on the back. I write the high-level designs and API contracts, then ship the code, so decisions made on paper survive production.",
+    "I’m a frontend-focused full stack developer and team lead with 4.5+ years of experience building enterprise web applications. I’ve grown at Addverb Technologies from Software Development Engineer Intern to Lead Software Engineer.",
+    "My work spans Angular and Web Components, Java and Spring Boot, REST APIs, RabbitMQ and SQL. I’ve led delivery of warehouse management software across user interfaces, services and data layers.",
   ],
   highlights: [
-    { title: "Lead across the stack", text: "Own modules from requirement analysis and design to development and production support." },
-    { title: "Design system architect", text: "Standardised UI across 4 production frontend applications with reusable Web Components." },
-    { title: "Event-driven backends", text: "RabbitMQ workflows that decouple cycle count, inventory and HU scan services." },
-    { title: "AI-accelerated delivery", text: "Introduced Claude and Windsurf to the team, lifting engineering productivity by 70%." },
+    { title: "Full stack delivery", text: "Built WMS features across frontend, backend, APIs and databases." },
+    { title: "Frontend architecture", text: "Created a shared design system used across 4 production applications." },
+    { title: "Team leadership", text: "Led planning, prioritisation and reviews for a 6-member team." },
+    { title: "Measurable outcomes", text: "Improved sprint delivery to 95% and reduced PDF generation effort by 90%." },
   ],
 };
 
@@ -43,25 +43,20 @@ export const capabilities = [
   { title: "AI-assisted development", text: "Faster features, faster debugging and quicker onboarding to unfamiliar code.", tags: ["Claude", "Windsurf"] },
 ];
 
-export const techStack = [
-  ["Angular", "TypeScript", "JavaScript", "RxJS", "React", "Web Components", "Tailwind CSS", "SCSS", "HTML5", "Bootstrap", "Angular Material", "PrimeNG"],
-  ["Java", "Spring Boot", "Spring MVC", "Spring Data JPA", "Hibernate", "Node.js", "RabbitMQ", "SQL", "Maven", "Playwright", "Kubernetes", "GitLab", "GitHub", "Cypress", "JUnit", "SonarQube"],
-];
-
 export const experience = [
   {
     role: "Lead Software Engineer",
     period: "Aug 2025 - Present",
     tags: ["Angular", "Spring Boot", "RabbitMQ", "Node.js", "Playwright"],
     points: [
-      "Owned the manual and automated Cycle Count module across frontend, backend, APIs and database, from requirement analysis to production support.",
-      "Engineered a reusable PDF microservice with Node.js and Playwright, reused across 4 business workflows and cutting document-generation effort by 90%.",
-      "Authored HLDs and REST API contracts for HU scan, HU count and inventory audit workflows.",
-      "Integrated RabbitMQ to connect cycle count, inventory update and HU scan services, improving decoupling, reliability and responsiveness.",
-      "Delivered Spring Boot enhancements with Spring Data JPA, Hibernate and optimised SQL for warehouse and inventory data.",
-      "Led sprint planning, daily scrums and code reviews for 4 developers and 2 testers, reaching 95% on-time sprint delivery.",
-      "Introduced Claude and Windsurf, improving engineering productivity by 70%.",
-      "Built responsive, reusable UI for Handheld Terminal (HHT) and desktop WMS apps, improving task completion time by 80%.",
+      "Owned manual and automated Cycle Count delivery across frontend, backend, APIs and database, from requirements and design through production support; guided 2 team members.",
+      "Built a reusable Node.js and Playwright PDF service with HTML/CSS templates for 4 business workflows, cutting document-generation effort by 90%.",
+      "Designed HLDs and REST API contracts for Handling Unit (HU) scan, HU count and inventory audit workflows.",
+      "Integrated RabbitMQ events across cycle count, inventory updates and HU scan services to improve service decoupling and responsiveness.",
+      "Implemented Java and Spring Boot backend features and built persistence layers with Spring Data JPA, Hibernate and SQL.",
+      "Led sprint planning, daily scrums, prioritisation and code reviews for 4 developers and 2 testers; achieved 95% on-time sprint delivery.",
+      "Introduced Claude and Windsurf to accelerate feature development, debugging and codebase exploration; improved engineering productivity by 70%.",
+      "Built reusable HHT and desktop WMS workflows that improved task completion time by 80%.",
     ],
   },
   {
@@ -69,14 +64,13 @@ export const experience = [
     period: "Aug 2022 - Aug 2025",
     tags: ["Angular", "React", "TypeScript", "Design System"],
     points: [
-      "Led a 4-member Frontend/UI team delivering enterprise WMS applications for large-scale automation environments.",
-      "Architected the Addverb Design System, standardising components across 4 production frontend applications.",
-      "Built and maintained 7+ WMS applications (desktop and HHT) using Angular, React, TypeScript and REST APIs.",
-      "Improved development efficiency and UI consistency by 70% with reusable components and shared submodules.",
+      "Led a 4-member frontend/UI team delivering enterprise WMS applications for large-scale automation environments.",
+      "Architected the Addverb Design System, standardising reusable components across 4 production frontend applications.",
+      "Developed and maintained 7+ desktop and HHT WMS applications using Angular, React, TypeScript and REST APIs.",
+      "Built shared components and submodules that improved development efficiency and UI consistency by 70%.",
       "Delivered Midbound, Outbound, Cycle Count, Ad Hoc Bin-to-Bin, Production Order, Inventory UOM Master and UOM Conversion Master modules.",
-      "Partnered with process teams and warehouse operators to turn operational needs into frontend solutions.",
-      "Resolved production issues through log analysis and API troubleshooting.",
-      "Enforced ESLint and coding standards across 10+ projects.",
+      "Worked with process teams and warehouse operators to turn operational requirements into frontend solutions.",
+      "Investigated production issues through log analysis and API troubleshooting; enforced ESLint and coding standards across 10+ projects.",
     ],
   },
   {
@@ -85,42 +79,42 @@ export const experience = [
     tags: ["Angular", "React", "Cypress"],
     points: [
       "Converted UI wireframes into responsive, reusable Angular and React components.",
-      "Wrote Cypress tests that improved reliability and regression coverage.",
+      "Implemented Cypress frontend tests to improve reliability and regression coverage.",
       "Refactored legacy frontend code and fixed defects, reducing bugs by 70%.",
     ],
   },
 ];
 
-export const projects = [
+export const selectedWork = [
   {
     title: "Cycle Count module",
-    metric: "End-to-end ownership",
-    text: "Manual and automated cycle counting across UI, APIs and database. I owned it from requirement analysis and technical design to production support, and guided 2 engineers to release.",
+    metric: "Frontend · backend · database",
+    text: "Manual and automated cycle counting across the application stack. Owned requirements, technical design, development, integration and production support, and guided 2 team members.",
     tags: ["Angular", "Spring Boot", "RabbitMQ", "SQL"],
     wide: true,
   },
   {
     title: "PDF generation microservice",
-    metric: "90% less effort",
-    text: "A reusable Node.js and Playwright service that turns HTML/CSS templates into standard PDFs, shared by 4 business workflows.",
+    metric: "90% less document effort",
+    text: "A reusable Node.js and Playwright service that generates standardised PDFs from HTML/CSS templates for 4 business workflows.",
     tags: ["Node.js", "Playwright", "Microservice"],
   },
   {
     title: "Addverb Design System",
-    metric: "4 apps standardised",
-    text: "A Web Components design system and shared submodules that raised UI consistency and development efficiency by 70%.",
+    metric: "4 production apps",
+    text: "A shared Web Components design system and reusable submodules that improved UI consistency and development efficiency by 70%.",
     tags: ["Web Components", "Angular", "Tailwind CSS"],
   },
   {
-    title: "Event-driven WMS services",
-    metric: "3 core workflows",
-    text: "HLDs and REST contracts for HU scan, HU count and inventory audit, with RabbitMQ events decoupling the services.",
-    tags: ["HLD", "REST APIs", "RabbitMQ", "Java"],
+    title: "WMS modules and workflows",
+    metric: "Desktop and HHT workflows",
+    text: "Delivered warehouse workflows including Midbound, Outbound, Cycle Count, Ad Hoc Bin-to-Bin, Production Order and inventory unit-of-measure modules across desktop and handheld applications.",
+    tags: ["Angular", "React", "TypeScript", "REST APIs"],
   },
   {
     title: "Handheld Terminal and desktop UI",
-    metric: "80% faster tasks",
-    text: "Responsive, reusable workflows for warehouse operators on HHT devices and desktop, built with the people who use them.",
+    metric: "80% faster task completion",
+    text: "Responsive, reusable interfaces for warehouse operators on handheld terminals and desktop WMS applications.",
     tags: ["Angular", "TypeScript", "UX"],
   },
 ];

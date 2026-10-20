@@ -1,7 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Skills from "./components/Skills";
 import TechStack from "./components/TechStack";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
@@ -16,10 +15,9 @@ export default function App() {
       <main>
         <Hero />
         <About />
-        <Skills />
-        <TechStack />
         <Experience />
         <Projects />
+        <TechStack />
         <GitHubStats />
         <Certifications />
         <Contact />

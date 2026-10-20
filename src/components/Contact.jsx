@@ -22,7 +22,7 @@ export default function Contact() {
             Let's build something <span className="text-gradient">that scales.</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-lg text-muted">
-            I'm open to lead and senior engineering roles at product companies and startups.
+            I'm open to frontend, full stack and engineering leadership opportunities.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-3">
             <a href={`mailto:${profile.email}`} className="bg-gradient-brand rounded-full px-6 py-3 font-medium shadow-lg shadow-violet/25 hover:brightness-110">Email me</a>

@@ -1,24 +1,20 @@
-import { techStack } from "../data/resume";
+import { capabilities } from "../data/resume";
 import Section from "./Section";
-
-function Row({ items, reverse }) {
-  const loop = [...items, ...items];
-  return (
-    <div className="marquee overflow-hidden py-1.5">
-      <div className={`marquee-track ${reverse ? "reverse" : ""}`}>
-        {loop.map((t, i) => (
-          <span key={i} className="glass whitespace-nowrap rounded-full px-5 py-2.5 font-mono text-sm">{t}</span>
-        ))}
-      </div>
-    </div>
-  );
-}
+import Card from "./Card";
 
 export default function TechStack() {
   return (
-    <Section id="stack" title="Tech stack" sub="The tools I reach for every day." className="!max-w-none px-0">
-      <Row items={techStack[0]} />
-      <Row items={techStack[1]} reverse />
+    <Section id="skills" title="Skills and tools" sub="A practical mix of frontend, backend, testing and team delivery.">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {capabilities.map((group) => (
+          <Card key={group.title} className="h-full p-6">
+            <h3 className="font-semibold">{group.title}</h3>
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {group.tags.map((tag) => <li key={tag} className="rounded-full border border-edge bg-white/5 px-3 py-1.5 text-sm text-muted">{tag}</li>)}
+            </ul>
+          </Card>
+        ))}
+      </div>
     </Section>
   );
 }

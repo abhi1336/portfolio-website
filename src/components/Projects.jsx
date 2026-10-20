@@ -1,13 +1,13 @@
-import { projects } from "../data/resume";
+import { profile, selectedWork } from "../data/resume";
 import Section from "./Section";
 import Reveal from "./Reveal";
 import Card from "./Card";
 
 export default function Projects() {
   return (
-    <Section id="projects" title="Featured projects" sub="Work shipped to production in large-scale warehouse automation environments.">
+    <Section id="selected-work" title="Selected work at Addverb" sub={`Examples of work delivered as part of my roles at ${profile.company}.`}>
       <div className="grid gap-4 md:grid-cols-2">
-        {projects.map((p, i) => (
+        {selectedWork.map((p, i) => (
           <Reveal key={p.title} delay={(i % 2) * 100} className={p.wide ? "md:col-span-2" : ""}>
             <Card className="h-full p-7 sm:p-8">
               <span className="bg-gradient-brand inline-block rounded-full px-3 py-1 text-xs font-semibold">{p.metric}</span>
